@@ -11,31 +11,34 @@
     <title>Document</title>
 </head>
 <body>
+
     <div class="container">
-        <div class="row">
-            <h1>Calculator</h1>
+        <div class="row justify-content-md-center">
 
-            <pre>
-                You can use:
-                "+" - to addition of numbers
-                "-" - to subtraction of numbers
-                "*" - to multiply of numbers
-                "/" - to division of numbers
-                <code>Also "<", ">", "=" to get boolean value</code>
+            <div class="col-md-6">
+                <h1>Calculator</h1>
 
-                To get the value - press Enter or "Result" button.
-            </pre>
+                <blockquote>
+                    <p>You can use:</p>
+                    <p>"+" - to addition of numbers</p>
+                    <p>"-" - to subtraction of numbers</p>
+                    <p>"*" - to multiply of numbers</p>
+                    <p>"/" - to division of numbers</p>
+                    <p><code>Also "<", ">", "=" to get boolean value</code></p>
 
-            <input type="text" id="input">
-            <button id="result">Result</button>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Start typing here to create a task..." aria-label="Start typing here to create a task...">
-                <span class="input-group-btn">
-                    <button class="btn btn-secondary btn-success" type="button">Add task</button>
+                    <p>To get the value - press Enter or "Result" button.</p>
+                </blockquote>
+
+                <div class="input-group">
+                    <input type="text" id="input" class="form-control" placeholder="Type here..." aria-label="Type here...">
+                    <span class="input-group-btn">
+                    <button id="result" class="btn btn-secondary btn-success" type="button">Result</button>
                 </span>
+                </div>
+                <hr>
+                <div id='out'></div>
             </div>
-            <hr>
-            <div id='out'></div>
+
         </div>
     </div>
 
